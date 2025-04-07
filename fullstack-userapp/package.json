@@ -1,0 +1,29 @@
+{
+  "name": "fullstack-userapp",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  },
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "mssql": "^11.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "enginesStrict": true,
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
